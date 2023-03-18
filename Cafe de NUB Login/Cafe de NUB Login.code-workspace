@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "../Cafe de NUB Login"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Cafe de NUB Login"
+	}
+}
