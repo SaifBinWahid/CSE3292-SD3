@@ -1,111 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cafe de NUB</title>
+    <link rel="stylesheet" href="project.css">
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
-    
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
-
-    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-
-<header>
-
-    <a href="#" class="logo"><img src="logo.jpg"></a>
-
-        <nav class="navbar">
-            <a class="active" href="#home">home</a>
-            <a href="#menu">menu</a>
-            <a href="#dishes">dishes</a>
-            <a href="#order">order</a>
-            <a href="#about">about</a>
-            <a href="#logout">logout</a>
-
-            
-        </nav>
- 
-        <div class="icons">
-            <i class="fas fa-bars" id="bars"></i>
-            <i class="fas fa-search" id="search-icon"></i>
-            <a class="fas fa-shopping-cart"></a>
-            
-
-
-        </div>
-
-</header>
-
-<!--header ends here-->
-
-<!-- search form-->
-
-<form action="" id="search-form">
-    <input type="search" placeholder="search here..." name="" id="search-box">
-    <label for="search-box" class="fas fa-search"></label>
-    <i class="fas fa-times" id="close"></i>
-</form>
- 
-<!--home section starts here-->
-
-<section>
-    <section class= "home">
-
-        <div class="swiper-container home-slider">
-    
-            <div class=" wrapper">
-    
-                <div class="slide">
-                    <div class="content">
-                        <span>our special dish</span>
-                        <h3>chow Mein</h3>
-                        
-                            <a href="#" class="btn">order</a>
-                    </div>
-                        <div class="image">
-                            <img src="chowmein-1.jpg" alt="">
-                        </div>
-                </div>
-                <div class="swiper-slide slide">
-                    <div class="content">
-                        <span>our special dish</span>
-                        <h3>Fried Rice</h3>
-                       
-                            <a href="#" class="btn">order</a>
-                    </div>
-                        <div class="image">
-                            <img src="friedrice-2.jpg" alt="">
-                        </div>
-                </div>
-    
+    <!-- NAVBAR CREATION -->
+   <header class="header">
+   </header>
+    <!-- LOGIN FORM CREATION -->
+    <div class="background"></div>
+    <div class="container">
+        <div class="item">
+            <h2 class="logo">꧁༒Cafe De NUB༒꧂</h2>
+            <div class="text-item">
+                <h2>Welcome! <br><span>
+                    To Cafe De NUB
+                </span></h2>
+                <p>Ultimate Cigar Coffee Experience</p>
             </div>
-            <div class="swiper-pagination"></div>
-    
         </div>
-     </div>
-    </section>
-    
-</section>
-    
-<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+        <div class="login-section">
+            <div class="form-box login">
+                <form action="connect.php" method="done">
+                    <h2>Sign In</h2>
+                    <div class="input-box">
+                        <span class="icon"><i class='bx bxs-envelope'></i></span>
+                        <input type="email" detail="sEmail"required>
+                        <label >Email</label>
+                    </div>
+                    <div class="input-box">
+                        <span class="icon"><i class='bx bxs-lock-alt' ></i></span>
+                        <input type="password" detail="sPassword"required>
+                        <label>Password</label>
+                    </div>
+                    <div class="remember-password">
+                        <label for=""><input type="checkbox">Remember Me</label>
+                    </div>
+                    <button class="btn">Sign In</button>
+                    <div class="create-account">
+                        <p>Create A New Account? <a href="#" class="register-link">Registation</a></p>
+                    </div>
+                </form>
+            </div>
+            <div class="form-box register">
+                <form action="">
 
-<script src="script.js">
-    var swiper = new Swiper(".card_slider", {
-      slidesPerView: 3,
-      spaceBetween: 500,
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-      },
-    });
-      
-</script>
+                    <h2>Registation</h2>
 
+                    <div class="input-box">
+                        <span class="icon"><i class='bx bxs-user'></i></span>
+                        <input type="text" detail="rUsername"required>
+                        <label >Username</label>
+                    </div>
+                    <div class="input-box">
+                        <span class="icon"><i class='bx bxs-envelope'></i></span>
+                        <input type="email" detail="rEmail"required>
+                        <label >Email</label>
+                    </div>
+                    <div class="input-box">
+                        <span class="icon"><i class='bx bxs-lock-alt' ></i></span>
+                        <input type="password" detail="rPassword"required>
+                        <label>Password</label>
+                    </div>
+                    <div class="remember-password">
+                        <label for=""><input type="checkbox">I agree with this statment</label>
+                    </div>
+                    <button class="btn">Registation</button>
+                    <div class="create-account">
+                        <p>Already Have An Account? <a href="#" class="login-link">Sign In</a></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+     <!-- SIGN UP FORM CREATION -->
 
-</body>    
+    <script src="project.js"></script>
+</body>
+
 </html>
-    
